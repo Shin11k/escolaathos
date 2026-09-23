@@ -1,0 +1,1020 @@
+/* ==========================================================
+   ESCOLA ATHOS — RESPONSIVIDADE MOBILE
+   Regras aplicadas somente em telas pequenas. O desktop
+   permanece exatamente controlado pelo styles.css original.
+   ========================================================== */
+
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .wrap {
+    width: calc(100% - 32px) !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* TOPO */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .site-header .nav--athos {
+    width: calc(100% - 28px) !important;
+    height: 72px !important;
+    min-height: 72px !important;
+    gap: 12px !important;
+  }
+
+  .brand--header {
+    flex: 0 1 auto !important;
+    width: auto !important;
+    max-width: 190px !important;
+  }
+
+  .brand--header img {
+    width: 168px !important;
+    height: auto !important;
+    max-height: 44px !important;
+  }
+
+  .brand-identity small {
+    font-size: 6.6px !important;
+    line-height: 1.15 !important;
+    margin-top: 2px !important;
+    letter-spacing: 0 !important;
+  }
+
+  .site-header .menu-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    padding: 0 !important;
+    border-radius: 8px;
+    font-size: 27px !important;
+  }
+
+  .site-header .nav-right > .phone,
+  .site-header .nav-right > .header-cta {
+    display: none !important;
+  }
+
+  .site-header .nav-links {
+    display: none !important;
+    position: absolute !important;
+    top: 72px !important;
+    left: -14px !important;
+    right: -14px !important;
+    width: auto !important;
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    padding: 12px 20px 22px !important;
+    background: #fff !important;
+    border-top: 1px solid #edf1f3;
+    box-shadow: 0 18px 32px rgba(0, 28, 109, .10);
+  }
+
+  .site-header .nav-links.open {
+    display: flex !important;
+  }
+
+  .site-header .nav-links > a {
+    width: 100%;
+    padding: 13px 4px !important;
+    font-size: 15px !important;
+  }
+
+  .nav-mobile-actions {
+    display: flex !important;
+  }
+
+  .header-cta--mobile {
+    display: flex !important;
+    width: 100% !important;
+    height: 50px !important;
+    min-height: 50px !important;
+  }
+
+  /* HERO */
+  .hero-athos {
+    min-height: 690px !important;
+    height: auto !important;
+    padding: 62px 0 42px !important;
+    align-items: flex-end !important;
+    background:
+      linear-gradient(90deg, rgba(0,24,70,.96) 0%, rgba(0,24,70,.86) 52%, rgba(0,24,70,.28) 100%),
+      url("assets/hero-colado-final.png") 71% center / cover no-repeat !important;
+  }
+
+  .hero-athos__content {
+    width: calc(100% - 32px) !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-athos__eyebrow {
+    margin-bottom: 12px !important;
+    font-size: 10px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .hero-athos h1 {
+    max-width: 340px;
+    font-size: clamp(43px, 13vw, 54px) !important;
+    line-height: .98 !important;
+    letter-spacing: -2.2px !important;
+  }
+
+  .hero-athos__description {
+    max-width: 315px;
+    margin-top: 18px !important;
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+  }
+
+  .hero-athos__description br {
+    display: none;
+  }
+
+  .hero-athos__buttons {
+    width: min(100%, 330px) !important;
+    margin-top: 24px !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 11px !important;
+  }
+
+  .hero-btn {
+    width: 100% !important;
+    min-height: 50px !important;
+    justify-content: center !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    font-size: 13px !important;
+  }
+
+  .hero-athos__levels {
+    width: min(100%, 330px) !important;
+    margin-top: 26px !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    font-size: 13px !important;
+  }
+
+  .hero-level {
+    min-height: 28px;
+  }
+
+  .hero-divider,
+  .hero-athos__phrase {
+    display: none !important;
+  }
+
+  /* NOSSA ESSÊNCIA */
+  .about {
+    padding: 54px 0 48px !important;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+  }
+
+  .about-copy h2 {
+    font-size: clamp(38px, 11vw, 46px) !important;
+    line-height: 1.02 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .about-copy p {
+    font-size: 14px !important;
+    line-height: 1.68 !important;
+  }
+
+  .about-copy .btn {
+    width: 100%;
+    min-height: 50px;
+  }
+
+  .about-photo-card {
+    width: 100% !important;
+    height: min(112vw, 430px) !important;
+    border-radius: 12px !important;
+  }
+
+  .purpose-card {
+    width: min(100%, 330px) !important;
+    min-height: 250px !important;
+    margin: 0 auto !important;
+    padding: 42px 34px !important;
+    text-align: center;
+    align-items: center;
+  }
+
+  .purpose-card strong {
+    font-size: 24px !important;
+  }
+
+  /* DIFERENCIAIS */
+  .differences {
+    padding: 52px 0 54px !important;
+  }
+
+  .differences h2 {
+    font-size: 33px !important;
+    line-height: 1.06 !important;
+    margin-bottom: 30px !important;
+  }
+
+  .diff-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+
+  .diff-grid article,
+  .diff-grid article:first-child {
+    padding: 22px 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+  }
+
+  .diff-grid article:first-child {
+    padding-top: 4px !important;
+  }
+
+  .diff-grid article:last-child {
+    border-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .diff-grid svg {
+    width: 34px !important;
+    height: 34px !important;
+    margin-bottom: 13px !important;
+  }
+
+  .diff-grid h3 {
+    font-size: 21px !important;
+  }
+
+  .diff-grid p {
+    max-width: 330px;
+    font-size: 13px !important;
+  }
+
+  /* ETAPAS DE ENSINO */
+  .journey-section {
+    padding: 54px 0 56px !important;
+  }
+
+  .journey-layout {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  .journey-visual {
+    width: 100% !important;
+    max-width: 440px !important;
+    margin: 0 auto !important;
+  }
+
+  .journey-image-card {
+    min-height: 0 !important;
+    height: auto !important;
+    border-radius: 14px !important;
+    overflow: hidden;
+  }
+
+  .journey-image-card img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    object-fit: contain !important;
+  }
+
+  .journey-badge {
+    right: 10px !important;
+    bottom: -20px !important;
+    transform: scale(.88);
+    transform-origin: right bottom;
+  }
+
+  .journey-content {
+    padding: 0 !important;
+  }
+
+  .journey-content h2 {
+    font-size: clamp(36px, 10.7vw, 45px) !important;
+    line-height: 1.02 !important;
+  }
+
+  .journey-intro {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+  }
+
+  .journey-step {
+    grid-template-columns: 42px 1fr !important;
+    gap: 14px !important;
+    padding: 19px 0 !important;
+  }
+
+  .journey-step__number {
+    font-size: 13px !important;
+  }
+
+  .journey-step__top {
+    align-items: center !important;
+  }
+
+  .journey-step__top h3 {
+    font-size: 20px !important;
+  }
+
+  .journey-step__body p,
+  .journey-step__body a {
+    font-size: 13px !important;
+  }
+
+  .journey-actions .btn {
+    width: 100% !important;
+    min-height: 50px !important;
+    text-align: center;
+  }
+
+  /* PROJETOS */
+  .projects-feature--reference {
+    padding: 48px 0 44px !important;
+  }
+
+  .projects-feature--reference .projects-reference-wrap {
+    width: calc(100% - 28px) !important;
+  }
+
+  .projects-feature--reference .projects-reference-main {
+    grid-template-columns: 1fr !important;
+    min-height: 0 !important;
+  }
+
+  .projects-feature--reference .projects-reference-image {
+    min-height: 0 !important;
+    height: 300px !important;
+  }
+
+  .projects-feature--reference .projects-reference-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .projects-feature--reference .projects-reference-copy {
+    min-height: 0 !important;
+    padding: 34px 22px 38px !important;
+  }
+
+  .projects-feature--reference .projects-reference-copy h2 {
+    font-size: 34px !important;
+    line-height: 1.04 !important;
+  }
+
+  .projects-feature--reference .projects-reference-copy p {
+    font-size: 14px !important;
+  }
+
+  .projects-feature--reference .projects-reference-button {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 50px !important;
+    text-align: center;
+  }
+
+  .projects-feature--reference .projects-reference-cards {
+    width: 100% !important;
+    margin-top: 16px !important;
+    transform: none !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .projects-feature--reference .projects-reference-card > img {
+    height: 185px !important;
+  }
+
+  /* DEPOIMENTOS */
+  .testimonials,
+  .projects-feature--reference + .testimonials {
+    padding: 54px 0 50px !important;
+  }
+
+  .testi-head {
+    align-items: flex-start !important;
+    gap: 18px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .testi-head h2 {
+    font-size: 32px !important;
+    line-height: 1.08 !important;
+  }
+
+  .testi-head h2 b {
+    width: 34px !important;
+  }
+
+  .testi-controls {
+    flex: 0 0 auto;
+    padding-top: 18px;
+  }
+
+  .testi-arrow {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .testi-carousel {
+    grid-auto-columns: 88% !important;
+    gap: 13px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .testi-card {
+    min-height: 190px !important;
+    padding: 22px !important;
+  }
+
+  /* AGENDAR VISITA */
+  .visit {
+    padding: 22px 0 0 !important;
+  }
+
+  .visit .wrap {
+    width: calc(100% - 24px) !important;
+  }
+
+  .visit-grid {
+    height: auto !important;
+    min-height: 0 !important;
+    grid-template-columns: 1fr !important;
+    row-gap: 10px !important;
+    padding: 16px 16px 24px !important;
+    background: linear-gradient(180deg, #f4f7f9 0%, #fff 100%) !important;
+  }
+
+  .visit-visual {
+    order: 1;
+    min-height: 0 !important;
+    height: auto !important;
+    justify-content: center !important;
+  }
+
+  .visit-visual img {
+    width: min(100%, 290px) !important;
+    height: auto !important;
+    max-width: 290px !important;
+    margin: 0 auto !important;
+  }
+
+  .visit-copy {
+    order: 2;
+    padding: 4px 0 0 !important;
+    text-align: left !important;
+  }
+
+  .visit-kicker {
+    font-size: 9px !important;
+    letter-spacing: 2.6px !important;
+  }
+
+  .visit-copy h2 {
+    font-size: 33px !important;
+    line-height: 1.03 !important;
+    letter-spacing: -1.2px !important;
+  }
+
+  .visit-copy h2 br {
+    display: none;
+  }
+
+  .visit-copy p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  .visit-actions {
+    width: 100%;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+
+  .visit-btn {
+    width: 100% !important;
+    min-height: 50px !important;
+    height: 50px !important;
+    padding: 0 16px !important;
+    border-radius: 10px !important;
+    font-size: 13.5px !important;
+  }
+
+  .visit-hand {
+    order: 3;
+    max-width: 100% !important;
+    margin: 8px auto 0 !important;
+    padding: 0 !important;
+    font-size: 27px !important;
+  }
+
+  /* RODAPÉ */
+  .footer {
+    padding: 36px 0 20px !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .footer-about {
+    padding-right: 0 !important;
+  }
+
+  .footer-brand--logo img {
+    width: min(250px, 78vw) !important;
+  }
+
+  .footer-about p {
+    max-width: 100% !important;
+  }
+
+  .mini-map {
+    min-height: 180px !important;
+    height: 180px !important;
+  }
+
+  .footer-bottom {
+    margin-top: 28px !important;
+    padding-top: 18px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .footer-developer {
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .wrap {
+    width: calc(100% - 26px) !important;
+  }
+
+  .brand--header {
+    max-width: 172px !important;
+  }
+
+  .brand--header img {
+    width: 154px !important;
+  }
+
+  .brand-identity small {
+    font-size: 6.1px !important;
+  }
+
+  .hero-athos {
+    min-height: 665px !important;
+    padding-top: 52px !important;
+    background:
+      linear-gradient(90deg, rgba(0,24,70,.97) 0%, rgba(0,24,70,.88) 58%, rgba(0,24,70,.34) 100%),
+      url("assets/hero-colado-final.png") 72% center / cover no-repeat !important;
+  }
+
+  .hero-athos h1 {
+    font-size: 44px !important;
+  }
+
+  .about-copy h2,
+  .journey-content h2 {
+    font-size: 37px !important;
+  }
+
+  .differences h2 {
+    font-size: 31px !important;
+  }
+
+  .projects-feature--reference .projects-reference-image {
+    height: 260px !important;
+  }
+
+  .projects-feature--reference .projects-reference-card > img {
+    height: 165px !important;
+  }
+
+  .testi-head {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+  }
+
+  .testi-head h2 {
+    font-size: 29px !important;
+  }
+
+  .testi-carousel {
+    grid-auto-columns: 92% !important;
+  }
+
+  .visit-copy h2 {
+    font-size: 31px !important;
+  }
+}
+
+/* ==========================================================
+   HERO MOBILE — reconstrução fiel da referência aprovada
+   ========================================================== */
+.hero-athos-mobile__content { display: none; }
+
+@media (max-width: 768px) {
+  /* Header da referência: 68px, logo à esquerda e menu à direita */
+  .site-header {
+    height: 68px !important;
+    background: #fff !important;
+  }
+
+  .site-header .nav--athos {
+    width: calc(100% - 36px) !important;
+    height: 68px !important;
+    min-height: 68px !important;
+  }
+
+  .brand--header {
+    max-width: 148px !important;
+  }
+
+  .brand--header img {
+    width: 145px !important;
+    max-height: 48px !important;
+    object-fit: contain !important;
+  }
+
+  .brand-identity small {
+    display: none !important;
+  }
+
+  .site-header .menu-btn {
+    width: 34px !important;
+    height: 34px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #052f7f !important;
+    background: transparent !important;
+    font-size: 0 !important;
+    position: relative;
+  }
+
+  .site-header .menu-btn::before {
+    content: "";
+    width: 25px;
+    height: 18px;
+    display: block;
+    background:
+      linear-gradient(#052f7f,#052f7f) 0 0 / 25px 2.5px no-repeat,
+      linear-gradient(#052f7f,#052f7f) 0 7.5px / 25px 2.5px no-repeat,
+      linear-gradient(#052f7f,#052f7f) 0 15px / 25px 2.5px no-repeat;
+    border-radius: 2px;
+  }
+
+  .site-header .nav-links {
+    top: 68px !important;
+  }
+
+  /* Esconde todo o conteúdo original do hero somente no mobile. */
+  .hero-athos > .hero-athos__content,
+  .hero-athos > .hero-athos__phrase {
+    display: none !important;
+  }
+
+  .hero-athos {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: clamp(610px, 160.25vw, 700px) !important;
+    min-height: 610px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background-image:
+      linear-gradient(to bottom,
+        rgba(0, 45, 112, 0.00) 0%,
+        rgba(0, 45, 112, 0.00) 35%,
+        rgba(0, 50, 125, 0.16) 44%,
+        rgba(0, 48, 124, 0.60) 58%,
+        rgba(0, 43, 115, 0.92) 73%,
+        #002a74 91%,
+        #00286f 100%),
+      linear-gradient(90deg,
+        rgba(0, 39, 105, 0.25) 0%,
+        rgba(0, 39, 105, 0.05) 38%,
+        rgba(0, 39, 105, 0.00) 70%),
+      url("assets/mobile-hero-girl.png") !important;
+    background-size: cover, cover, cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center, center, center 14% !important;
+  }
+
+  .hero-athos::before,
+  .hero-athos::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  .hero-athos-mobile__content {
+    position: absolute;
+    z-index: 4;
+    left: 25px;
+    right: 20px;
+    bottom: 31px;
+    display: block !important;
+    color: #fff;
+  }
+
+  .hero-athos-mobile__eyebrow {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin: 0 0 12px;
+    color: rgba(255,255,255,.93);
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: 3.4px;
+  }
+
+  .hero-athos-mobile__accent {
+    display: block;
+    width: 46px;
+    height: 4px;
+    margin-bottom: 16px;
+    border-radius: 99px;
+    background: #08c640;
+  }
+
+  .hero-athos-mobile__title {
+    max-width: 330px !important;
+    margin: 0 !important;
+    color: #fff !important;
+    font-family: "Roboto Slab", Georgia, serif !important;
+    font-size: clamp(39px, 11.55vw, 45px) !important;
+    font-weight: 900 !important;
+    line-height: 1.03 !important;
+    letter-spacing: -1.55px !important;
+    text-shadow: 0 1px 1px rgba(0,0,0,.04);
+  }
+
+  .hero-athos-mobile__description {
+    margin: 17px 0 0 !important;
+    color: rgba(255,255,255,.82) !important;
+    font-family: "Inter", Arial, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    line-height: 1.62 !important;
+    letter-spacing: .02px;
+  }
+
+  .hero-athos-mobile__cta {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    width: min(100%, 222px) !important;
+    height: 43px !important;
+    margin-top: 18px !important;
+    padding: 0 20px 0 23px !important;
+    border: 0 !important;
+    border-radius: 999px !important;
+    background: #08c944 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    font-family: "Inter", Arial, sans-serif !important;
+    font-size: 10.5px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    letter-spacing: .1px !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-athos-mobile__cta span:last-child {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    transform: translateY(-1px);
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-athos-mobile__content {
+    left: 22px;
+    right: 18px;
+    bottom: 26px;
+  }
+
+  .hero-athos-mobile__title {
+    font-size: 40px !important;
+  }
+
+  .hero-athos-mobile__description {
+    font-size: 12.4px !important;
+  }
+}
+
+/* ==========================================================
+   AJUSTE FINAL — TOPO MOBILE fiel à arte aprovada
+   ========================================================== */
+@media (max-width: 768px) {
+  .site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 120 !important;
+    height: 78px !important;
+    background: #ffffff !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .site-header .nav--athos {
+    width: calc(100% - 40px) !important;
+    height: 78px !important;
+    min-height: 78px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+  }
+
+  .site-header .brand--header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex: 0 1 auto !important;
+    width: auto !important;
+    max-width: none !important;
+    text-decoration: none !important;
+  }
+
+  .site-header .brand-identity {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .site-header .brand--header img {
+    display: block !important;
+    width: min(58vw, 245px) !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+  }
+
+  .site-header .brand-identity small {
+    display: none !important;
+  }
+
+  .site-header .nav-right {
+    margin-left: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    flex: 0 0 auto !important;
+  }
+
+  .site-header .menu-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    font-size: 0 !important;
+    color: transparent !important;
+    cursor: pointer !important;
+  }
+
+  .site-header .menu-btn::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 19px;
+    background:
+      linear-gradient(#06328a, #06328a) 0 0 / 26px 3px no-repeat,
+      linear-gradient(#06328a, #06328a) 0 8px / 26px 3px no-repeat,
+      linear-gradient(#06328a, #06328a) 0 16px / 26px 3px no-repeat;
+    border-radius: 3px;
+  }
+
+  .site-header .nav-links {
+    top: 78px !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 16px 22px 24px !important;
+    background: #ffffff !important;
+    border-top: 1px solid #edf0f4 !important;
+    box-shadow: 0 18px 34px rgba(0, 24, 109, 0.08) !important;
+  }
+
+  .hero-athos {
+    margin-top: 0 !important;
+    background-position: center, center, center 15% !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .site-header {
+    height: 74px !important;
+  }
+
+  .site-header .nav--athos {
+    width: calc(100% - 34px) !important;
+    height: 74px !important;
+    min-height: 74px !important;
+  }
+
+  .site-header .brand--header img {
+    width: min(60vw, 220px) !important;
+  }
+
+  .site-header .menu-btn {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+  }
+
+  .site-header .menu-btn::before {
+    width: 24px;
+    height: 18px;
+    background:
+      linear-gradient(#06328a, #06328a) 0 0 / 24px 3px no-repeat,
+      linear-gradient(#06328a, #06328a) 0 7.5px / 24px 3px no-repeat,
+      linear-gradient(#06328a, #06328a) 0 15px / 24px 3px no-repeat;
+  }
+
+  .site-header .nav-links {
+    top: 74px !important;
+  }
+}
+
+/* ==========================================================
+   AJUSTE EXTRA — logo do topo realmente responsiva no mobile
+   ========================================================== */
+@media (max-width: 768px) {
+  .site-header .brand--header,
+  .site-header .brand-identity {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+  }
+
+  .site-header .brand-identity {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .site-header .brand--header img {
+    display: block !important;
+    width: auto !important;
+    height: clamp(44px, 12vw, 58px) !important;
+    max-width: min(56vw, 220px) !important;
+    min-width: 140px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .site-header .brand--header img {
+    height: clamp(42px, 12.5vw, 54px) !important;
+    max-width: min(57vw, 205px) !important;
+    min-width: 132px !important;
+  }
+}
