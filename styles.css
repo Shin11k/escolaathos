@@ -5286,106 +5286,6 @@ a{text-decoration:none;color:inherit}
 
 
 /* ==========================================================
-   LOCALIZAÇÃO — destaque inspirado na referência enviada
-   ========================================================== */
-.location-showcase{
-  width:100%;
-  display:grid;
-  grid-template-columns:minmax(360px,.9fr) minmax(560px,1.35fr);
-  min-height:430px;
-  overflow:hidden;
-  background:#082f73;
-}
-.location-showcase__left{
-  position:relative;
-  display:flex;
-  align-items:center;
-  background:linear-gradient(135deg,#16c845 0%,#0fb83c 100%);
-  color:#fff;
-}
-.location-showcase__left::after{
-  content:"";
-  position:absolute;
-  right:-44px;
-  top:-44px;
-  width:130px;
-  height:130px;
-  background:#ffd72e;
-  transform:rotate(45deg);
-  opacity:.95;
-}
-.location-showcase__inner{
-  width:min(520px,calc(100% - 74px));
-  margin-left:auto;
-  margin-right:58px;
-  padding:64px 0;
-}
-.location-showcase__kicker{
-  display:block;
-  margin-bottom:3px;
-  font-size:22px;
-  font-weight:500;
-  letter-spacing:.2px;
-}
-.location-showcase h2{
-  margin:0 0 18px;
-  font-family:"Inter",Arial,sans-serif;
-  font-size:58px;
-  line-height:.95;
-  letter-spacing:-2.6px;
-  font-weight:900;
-}
-.location-showcase__address{
-  margin:0;
-  font-size:18px;
-  line-height:1.55;
-  color:rgba(255,255,255,.92);
-}
-.location-showcase__phone{
-  display:inline-block;
-  margin-top:24px;
-  color:#fff;
-  text-decoration:none;
-  font-size:34px;
-  line-height:1;
-  font-weight:300;
-}
-.location-showcase__actions{
-  display:flex;
-  gap:12px;
-  margin-top:30px;
-  flex-wrap:wrap;
-}
-.location-showcase__btn{
-  min-height:48px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:14px;
-  padding:0 21px;
-  border-radius:8px;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:800;
-}
-.location-showcase__btn--dark{background:#052b63;color:#fff}
-.location-showcase__btn--light{background:#fff;color:#07376f}
-.location-showcase__map{
-  min-height:430px;
-  padding:34px 34px 34px 0;
-  background:linear-gradient(90deg,#082f73 0%,#062a66 100%);
-}
-.location-showcase__map iframe{
-  width:100%;
-  height:100%;
-  min-height:362px;
-  border:0;
-  display:block;
-  border-radius:18px;
-  box-shadow:0 22px 48px rgba(0,0,0,.22);
-}
-
-/* ==========================================================
    TRABALHE CONOSCO
    ========================================================== */
 .work-with-us{
@@ -5502,4 +5402,230 @@ a{text-decoration:none;color:inherit}
   .work-with-us__copy p{font-size:14px}
   .work-with-us__btn{width:100%;text-align:center}
   .work-with-us__card{padding:28px 24px}
+}
+
+
+/* ==========================================================
+   LOCALIZAÇÃO — versão institucional Athos
+   ========================================================== */
+.location-showcase{
+  position:relative;
+  overflow:hidden;
+  padding:88px 0;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(27,201,73,.10) 0 105px, transparent 106px),
+    radial-gradient(circle at 92% 14%, rgba(6,45,97,.07) 0 150px, transparent 151px),
+    linear-gradient(180deg,#ffffff 0%,#f6f9f7 100%);
+}
+.location-showcase::before{
+  content:"";
+  position:absolute;
+  width:340px;
+  height:340px;
+  right:-150px;
+  bottom:-170px;
+  border:42px solid rgba(24,196,71,.08);
+  border-radius:50%;
+}
+.location-showcase__shell{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:minmax(0,.92fr) minmax(520px,1.08fr);
+  gap:64px;
+  align-items:center;
+}
+.location-showcase__eyebrow{
+  color:#18bf45;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2.8px;
+}
+.location-showcase__content h2{
+  margin:12px 0 18px;
+  color:#07376f;
+  font-family:"Inter",Arial,sans-serif;
+  font-size:58px;
+  line-height:1.02;
+  letter-spacing:-2.8px;
+  font-weight:900;
+}
+.location-showcase__content h2 span{color:#18c447}
+.location-showcase__intro{
+  max-width:620px;
+  margin:0;
+  color:#5b6e7d;
+  font-size:16px;
+  line-height:1.72;
+}
+.location-showcase__cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:30px;
+}
+.location-info-card{
+  display:flex;
+  align-items:flex-start;
+  gap:15px;
+  min-height:145px;
+  padding:21px 20px;
+  border:1px solid #e1e9e4;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 12px 28px rgba(6,45,97,.05);
+}
+.location-info-card__icon{
+  flex:0 0 46px;
+  width:46px;
+  height:46px;
+  display:grid;
+  place-items:center;
+  border-radius:13px;
+  background:#e9f9ee;
+  color:#16bc42;
+}
+.location-info-card__icon svg{width:22px;height:22px}
+.location-info-card small{
+  display:block;
+  margin-bottom:6px;
+  color:#17b941;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:1.8px;
+}
+.location-info-card strong{
+  display:block;
+  color:#08366d;
+  font-size:15px;
+  line-height:1.35;
+}
+.location-info-card p{
+  margin:6px 0 0;
+  color:#6b7b88;
+  font-size:12.5px;
+  line-height:1.5;
+}
+.location-showcase__actions{
+  display:flex;
+  gap:12px;
+  margin-top:28px;
+  flex-wrap:wrap;
+}
+.location-showcase__primary,
+.location-showcase__secondary{
+  min-height:52px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:0 20px;
+  border-radius:9px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:800;
+}
+.location-showcase__primary{background:#18c447;color:#fff;box-shadow:0 5px 0 #0b922e}
+.location-showcase__secondary{background:#fff;color:#07376f;border:1px solid #ccd9d2}
+.location-showcase__primary svg,
+.location-showcase__secondary svg{width:18px;height:18px}
+.location-showcase__visual{
+  position:relative;
+  min-height:510px;
+  padding:14px;
+  border-radius:26px;
+  background:#062f6c;
+  box-shadow:0 28px 65px rgba(6,45,97,.18);
+}
+.location-showcase__visual iframe{
+  width:100%;
+  height:482px;
+  display:block;
+  border:0;
+  border-radius:18px;
+}
+.location-showcase__badge{
+  position:absolute;
+  z-index:3;
+  left:34px;
+  top:32px;
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  min-height:38px;
+  padding:0 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.96);
+  color:#07376f;
+  font-size:12px;
+  font-weight:800;
+  box-shadow:0 9px 22px rgba(0,0,0,.12);
+}
+.location-showcase__badge-dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#18c447;
+  box-shadow:0 0 0 5px rgba(24,196,71,.13);
+}
+.location-showcase__floating{
+  position:absolute;
+  z-index:3;
+  right:32px;
+  bottom:32px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:220px;
+  padding:14px 17px;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 14px 32px rgba(4,36,82,.18);
+}
+.location-showcase__floating>div{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:#18c447;
+  color:#fff;
+}
+.location-showcase__floating svg{width:22px;height:22px}
+.location-showcase__floating span{display:flex;flex-direction:column}
+.location-showcase__floating small{
+  color:#18b941;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:1.3px;
+}
+.location-showcase__floating strong{
+  margin-top:2px;
+  color:#07376f;
+  font-size:15px;
+}
+
+/* Nav with new tabs */
+@media(min-width:1001px){
+  .nav-links{gap:30px;font-size:15px}
+  .nav-links a{white-space:nowrap}
+}
+
+@media(max-width:900px){
+  .location-showcase{padding:60px 0}
+  .location-showcase__shell{grid-template-columns:1fr;gap:34px}
+  .location-showcase__visual{min-height:400px}
+  .location-showcase__visual iframe{height:372px}
+}
+@media(max-width:600px){
+  .location-showcase{padding:52px 0}
+  .location-showcase__content h2{font-size:40px;letter-spacing:-1.8px}
+  .location-showcase__intro{font-size:14px}
+  .location-showcase__cards{grid-template-columns:1fr}
+  .location-showcase__actions{flex-direction:column;align-items:stretch}
+  .location-showcase__primary,.location-showcase__secondary{width:100%}
+  .location-showcase__visual{min-height:340px;padding:10px;border-radius:18px}
+  .location-showcase__visual iframe{height:320px;border-radius:12px}
+  .location-showcase__badge{left:20px;top:20px}
+  .location-showcase__floating{left:20px;right:20px;bottom:20px;min-width:0}
 }
