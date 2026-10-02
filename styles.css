@@ -6371,3 +6371,143 @@ a{text-decoration:none;color:inherit}
   .school-page-cta{padding:52px 0 68px}
   .school-page-cta__box{padding:32px 24px}
 }
+
+
+/* ==========================================================
+   A ESCOLA — Documentos institucionais
+   ========================================================== */
+.school-page-docs{padding:84px 0;background:#fff}
+.school-page-docs__head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:50px;
+  margin-bottom:36px;
+}
+.school-page-docs__head>div{max-width:700px}
+.school-page-docs__head h2{
+  margin:10px 0 0;
+  color:#07376f;
+  font-size:44px;
+  line-height:1.05;
+  letter-spacing:-2px;
+}
+.school-page-docs__head>p{
+  max-width:480px;
+  margin:0;
+  color:#6a7b87;
+  font-size:14px;
+  line-height:1.68;
+}
+.school-page-docs__grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.school-doc-card{
+  padding:28px 26px;
+  border:1px solid #e1e9e4;
+  border-radius:20px;
+  background:#fbfdfc;
+  box-shadow:0 12px 30px rgba(7,55,111,.04);
+}
+.school-doc-card__top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:23px;
+}
+.school-doc-card__icon{
+  width:50px;
+  height:50px;
+  display:grid;
+  place-items:center;
+  border-radius:14px;
+  background:#e9f9ee;
+  color:#18c447;
+}
+.school-doc-card__icon svg{width:24px;height:24px}
+.school-doc-card__top>span{
+  color:#18b943;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:1.6px;
+}
+.school-doc-card h3{
+  margin:0 0 11px;
+  color:#07376f;
+  font-size:21px;
+  line-height:1.18;
+}
+.school-doc-card>p{
+  margin:0;
+  color:#6b7c88;
+  font-size:13px;
+  line-height:1.65;
+}
+.school-doc-card details{
+  margin-top:22px;
+  padding-top:18px;
+  border-top:1px solid #e0e8e3;
+}
+.school-doc-card summary{
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  cursor:pointer;
+  color:#07376f;
+  font-size:12px;
+  font-weight:800;
+}
+.school-doc-card summary::-webkit-details-marker{display:none}
+.school-doc-card summary span{color:#18c447;font-size:18px;line-height:12px}
+.school-doc-card__details{
+  display:grid;
+  gap:8px;
+  margin-top:15px;
+}
+.school-doc-card__details span{
+  position:relative;
+  padding-left:15px;
+  color:#6c7c87;
+  font-size:12px;
+  line-height:1.45;
+}
+.school-doc-card__details span::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.52em;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:#18c447;
+}
+.school-doc-card--eca{background:#07376f;border-color:#07376f}
+.school-doc-card--eca .school-doc-card__icon{background:#18c447;color:#fff}
+.school-doc-card--eca h3{color:#fff}
+.school-doc-card--eca>p{color:rgba(255,255,255,.72)}
+.school-doc-card--eca .school-doc-card__top>span{color:#5fe17f}
+.school-doc-card--eca>a{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  margin-top:24px;
+  color:#66e785;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:800;
+}
+
+@media(max-width:900px){
+  .school-page-docs__head{display:block}
+  .school-page-docs__head>p{margin-top:14px}
+  .school-page-docs__grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .school-page-docs{padding:58px 0}
+  .school-page-docs__head h2{font-size:34px}
+  .school-page-docs__grid{grid-template-columns:1fr}
+}
