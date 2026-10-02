@@ -6142,3 +6142,169 @@ a{text-decoration:none;color:inherit}
   .home-projects-teaser__moments img{min-height:180px;height:180px}
   .home-projects-teaser__cta{width:100%;justify-content:center}
 }
+
+
+/* ==========================================================
+   HOME — A Escola / fachada e diferenciais
+   ========================================================== */
+.school-intro{
+  position:relative;
+  padding:92px 0;
+  background:#fff;
+}
+.school-intro__grid{
+  display:grid;
+  grid-template-columns:1.04fr .96fr;
+  gap:68px;
+  align-items:center;
+}
+.school-intro__eyebrow{
+  color:#18bd45;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2.7px;
+}
+.school-intro__content h2{
+  max-width:720px;
+  margin:13px 0 20px;
+  color:#07376f;
+  font-size:54px;
+  line-height:1.02;
+  letter-spacing:-2.6px;
+  font-weight:900;
+}
+.school-intro__content h2 span{color:#18c447}
+.school-intro__lead{
+  max-width:690px;
+  margin:0;
+  color:#637582;
+  font-size:16px;
+  line-height:1.72;
+}
+.school-intro__highlights{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:30px;
+}
+.school-intro__highlight{
+  display:flex;
+  gap:13px;
+  align-items:flex-start;
+  min-height:126px;
+  padding:19px 18px;
+  border:1px solid #e1e9e4;
+  border-radius:16px;
+  background:#fbfdfc;
+}
+.school-intro__highlight>svg{
+  flex:0 0 23px;
+  width:23px;
+  height:23px;
+  margin-top:2px;
+  color:#18c447;
+}
+.school-intro__highlight strong{
+  display:block;
+  margin-bottom:5px;
+  color:#07376f;
+  font-size:14px;
+  line-height:1.3;
+}
+.school-intro__highlight span{
+  display:block;
+  color:#71808b;
+  font-size:12px;
+  line-height:1.55;
+}
+.school-intro__actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+.school-intro__primary,
+.school-intro__secondary{
+  min-height:52px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  padding:0 21px;
+  border-radius:9px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:800;
+}
+.school-intro__primary{
+  background:#18c447;
+  color:#fff;
+  box-shadow:0 5px 0 #0b922e;
+}
+.school-intro__secondary{
+  background:#fff;
+  color:#07376f;
+  border:1px solid #ccd9d2;
+}
+.school-intro__visual{
+  position:relative;
+  min-height:560px;
+  overflow:hidden;
+  border-radius:26px;
+  background:#07376f;
+  box-shadow:0 28px 64px rgba(7,55,111,.15);
+}
+.school-intro__visual img{
+  width:100%;
+  height:100%;
+  min-height:560px;
+  display:block;
+  object-fit:cover;
+}
+.school-intro__visual::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 64%,rgba(4,37,82,.50));
+}
+.school-intro__visual-card{
+  position:absolute;
+  z-index:2;
+  left:24px;
+  right:24px;
+  bottom:22px;
+  padding:16px 18px;
+  border-radius:15px;
+  background:rgba(255,255,255,.95);
+  box-shadow:0 12px 28px rgba(0,0,0,.12);
+}
+.school-intro__visual-card span{
+  display:block;
+  margin-bottom:4px;
+  color:#18bd45;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:1.8px;
+}
+.school-intro__visual-card strong{
+  color:#07376f;
+  font-size:15px;
+  line-height:1.35;
+}
+
+@media(max-width:900px){
+  .school-intro{padding:64px 0}
+  .school-intro__grid{grid-template-columns:1fr;gap:34px}
+  .school-intro__visual{min-height:420px}
+  .school-intro__visual img{min-height:420px}
+}
+@media(max-width:600px){
+  .school-intro{padding:54px 0}
+  .school-intro__content h2{font-size:39px;letter-spacing:-1.8px}
+  .school-intro__lead{font-size:14px}
+  .school-intro__highlights{grid-template-columns:1fr}
+  .school-intro__actions{flex-direction:column}
+  .school-intro__primary,.school-intro__secondary{width:100%}
+  .school-intro__visual{min-height:340px;border-radius:18px}
+  .school-intro__visual img{min-height:340px}
+}
