@@ -4661,7 +4661,7 @@ a{text-decoration:none;color:inherit}
 @media(max-width:1000px){.nav{height:76px;display:flex;justify-content:space-between}.brand--header img{width:210px;height:62px}.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:18px 25px;box-shadow:0 14px 30px rgba(0,0,0,.08)}.nav-links.open{display:flex}.nav-links a{padding:8px 0}.phone,.header-cta{display:none}.menu-btn{display:block}}
 
 /* ===== HERO — usa exatamente a imagem aprovada ===== */
-.hero-athos{position:relative;background:url("assets/hero-colado-final.png") center center/cover no-repeat !important;overflow:hidden}
+.hero-athos{position:relative;background:#001230 url("assets/final-hero-desk.png") center center/contain no-repeat !important;overflow:hidden}
 .hero-athos::before,.hero-athos::after{content:none!important;display:none!important}
 .hero-athos__content,.hero-athos__phrase{position:relative;z-index:2}
 @media(max-width:900px){.hero-athos{background-position:62% center!important}}
