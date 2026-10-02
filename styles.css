@@ -5412,21 +5412,9 @@ a{text-decoration:none;color:inherit}
   position:relative;
   overflow:hidden;
   padding:88px 0;
-  background:
-    radial-gradient(circle at 8% 18%, rgba(27,201,73,.10) 0 105px, transparent 106px),
-    radial-gradient(circle at 92% 14%, rgba(6,45,97,.07) 0 150px, transparent 151px),
-    linear-gradient(180deg,#ffffff 0%,#f6f9f7 100%);
+  background:linear-gradient(180deg,#ffffff 0%,#f6f9f7 100%);
 }
-.location-showcase::before{
-  content:"";
-  position:absolute;
-  width:340px;
-  height:340px;
-  right:-150px;
-  bottom:-170px;
-  border:42px solid rgba(24,196,71,.08);
-  border-radius:50%;
-}
+.location-showcase::before{display:none}
 .location-showcase__shell{
   position:relative;
   z-index:2;
