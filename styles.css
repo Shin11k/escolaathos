@@ -5970,3 +5970,187 @@ a{text-decoration:none;color:inherit}
   .projects-page-cta__box h2{font-size:30px}
   .projects-page-cta__box>a{width:100%;justify-content:center}
 }
+
+
+/* ==========================================================
+   HOME — teaser unificado de Projetos
+   ========================================================== */
+.home-projects-teaser{
+  position:relative;
+  overflow:hidden;
+  padding:88px 0;
+  background:linear-gradient(180deg,#fff 0%,#f7faf8 100%);
+}
+.home-projects-teaser::before{
+  content:"";
+  position:absolute;
+  width:300px;
+  height:300px;
+  left:-180px;
+  top:-120px;
+  border-radius:50%;
+  background:rgba(24,196,71,.07);
+}
+.home-projects-teaser__shell{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:.92fr 1.08fr;
+  gap:58px;
+  align-items:center;
+}
+.home-projects-teaser__visual{
+  position:relative;
+  min-height:560px;
+  overflow:hidden;
+  border-radius:26px;
+  background:#07376f;
+  box-shadow:0 28px 60px rgba(7,55,111,.14);
+}
+.home-projects-teaser__visual img{
+  width:100%;
+  height:100%;
+  min-height:560px;
+  display:block;
+  object-fit:cover;
+}
+.home-projects-teaser__visual::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 62%,rgba(4,39,87,.26));
+}
+.home-projects-teaser__visual-badge{
+  position:absolute;
+  z-index:2;
+  left:24px;
+  bottom:22px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:11px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.95);
+  color:#07376f;
+  font-size:12px;
+  font-weight:800;
+  box-shadow:0 9px 22px rgba(0,0,0,.12);
+}
+.home-projects-teaser__visual-badge svg{width:17px;height:17px;color:#18c447}
+.home-projects-teaser__eyebrow{
+  color:#18bd45;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2.7px;
+}
+.home-projects-teaser__content h2{
+  margin:12px 0 18px;
+  color:#07376f;
+  font-size:50px;
+  line-height:1.03;
+  letter-spacing:-2.3px;
+  font-weight:900;
+}
+.home-projects-teaser__content>p{
+  max-width:700px;
+  margin:0;
+  color:#647581;
+  font-size:15px;
+  line-height:1.72;
+}
+.home-projects-teaser__features{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:24px;
+}
+.home-projects-teaser__features span{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  min-height:38px;
+  padding:0 12px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid #dfe9e3;
+  color:#07376f;
+  font-size:12px;
+  font-weight:700;
+}
+.home-projects-teaser__features svg{width:15px;height:15px;color:#18c447}
+.home-projects-teaser__moments{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:26px;
+}
+.home-projects-teaser__moments article{
+  position:relative;
+  overflow:hidden;
+  min-height:155px;
+  border-radius:15px;
+  background:#07376f;
+}
+.home-projects-teaser__moments img{
+  width:100%;
+  height:155px;
+  display:block;
+  object-fit:cover;
+}
+.home-projects-teaser__moments article::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 42%,rgba(4,37,82,.88));
+}
+.home-projects-teaser__moments article>div{
+  position:absolute;
+  z-index:2;
+  left:14px;
+  right:14px;
+  bottom:12px;
+  color:#fff;
+}
+.home-projects-teaser__moments small{
+  display:block;
+  margin-bottom:3px;
+  color:#5ee77f;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:1.1px;
+}
+.home-projects-teaser__moments strong{
+  display:block;
+  font-size:14px;
+}
+.home-projects-teaser__cta{
+  display:inline-flex;
+  align-items:center;
+  gap:15px;
+  min-height:52px;
+  margin-top:28px;
+  padding:0 22px;
+  border-radius:9px;
+  background:#18c447;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:800;
+  box-shadow:0 5px 0 #0b922e;
+}
+
+@media(max-width:900px){
+  .home-projects-teaser{padding:62px 0}
+  .home-projects-teaser__shell{grid-template-columns:1fr;gap:34px}
+  .home-projects-teaser__visual{min-height:430px}
+  .home-projects-teaser__visual img{min-height:430px}
+}
+@media(max-width:600px){
+  .home-projects-teaser{padding:52px 0}
+  .home-projects-teaser__content h2{font-size:38px;letter-spacing:-1.6px}
+  .home-projects-teaser__content>p{font-size:14px}
+  .home-projects-teaser__moments{grid-template-columns:1fr}
+  .home-projects-teaser__moments article,
+  .home-projects-teaser__moments img{min-height:180px;height:180px}
+  .home-projects-teaser__cta{width:100%;justify-content:center}
+}
