@@ -6511,3 +6511,85 @@ a{text-decoration:none;color:inherit}
   .school-page-docs__head h2{font-size:34px}
   .school-page-docs__grid{grid-template-columns:1fr}
 }
+
+
+/* ==========================================================
+   REVISÃO FINAL RESPONSIVA / NAVEGAÇÃO
+   ========================================================== */
+@media (max-width:1180px){
+  .site-header .nav--athos{
+    position:relative;
+    width:calc(100% - 30px);
+    height:84px;
+    gap:14px;
+  }
+  .brand--header{
+    flex:0 1 auto;
+    max-width:245px;
+  }
+  .brand--header img{
+    width:200px;
+    max-height:50px;
+  }
+  .brand-identity small{
+    font-size:8px;
+  }
+  .site-header .nav-right > .phone,
+  .site-header .nav-right > .header-cta{
+    display:none;
+  }
+  .site-header .menu-btn{
+    display:block;
+  }
+  .site-header .nav-links{
+    display:none;
+    position:absolute;
+    top:84px;
+    left:-15px;
+    right:-15px;
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+    padding:12px 20px 22px;
+    background:#fff;
+    border-top:1px solid #edf1f3;
+    box-shadow:0 16px 28px rgba(0,28,109,.08);
+    z-index:120;
+  }
+  .site-header .nav-links.open{
+    display:flex;
+  }
+  .site-header .nav-links > a{
+    padding:13px 4px;
+    font-size:15px;
+  }
+  .site-header .nav-links > a::after{
+    left:4px;
+    bottom:7px;
+    transform:none;
+  }
+  .site-header .nav-links > a.active::after,
+  .site-header .nav-links > a:hover::after{
+    width:34px;
+  }
+  .nav-mobile-actions{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    padding-top:14px;
+    margin-top:8px;
+    border-top:1px solid #edf1f3;
+  }
+  .phone--mobile{
+    display:flex !important;
+    font-size:15px !important;
+  }
+  .phone--mobile span{
+    display:inline !important;
+  }
+  .header-cta--mobile{
+    width:100% !important;
+    height:50px !important;
+    display:flex !important;
+  }
+}
