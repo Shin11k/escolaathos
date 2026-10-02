@@ -5763,3 +5763,17 @@ a{text-decoration:none;color:inherit}
   .work-page-cta__box h2{font-size:30px}
   .work-page-cta__box>a{width:100%;justify-content:center}
 }
+
+
+/* Página própria Trabalhe Conosco — mantém exatamente a seção aprovada */
+.work-with-us--standalone{
+  min-height:calc(100vh - 112px);
+  display:flex;
+  align-items:center;
+}
+@media(max-width:1000px){
+  .work-with-us--standalone{min-height:calc(100vh - 76px)}
+}
+@media(max-width:600px){
+  .work-with-us--standalone{align-items:flex-start}
+}
