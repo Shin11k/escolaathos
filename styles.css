@@ -6314,3 +6314,60 @@ a{text-decoration:none;color:inherit}
   .school-intro__visual{min-height:0;aspect-ratio:4/3;border-radius:16px}
   .school-intro__visual img{min-height:0}
 }
+
+
+/* ==========================================================
+   PÁGINA /A-ESCOLA/
+   ========================================================== */
+.school-page-photo{padding:54px 0 30px;background:#fff}
+.school-page-photo__frame{overflow:hidden;border-radius:26px;box-shadow:0 26px 60px rgba(7,55,111,.14)}
+.school-page-photo__frame img{width:100%;height:auto;display:block}
+
+.school-page-intro{padding:64px 0 82px;background:#fff}
+.school-page-intro__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+.school-page-eyebrow{color:#18bd45;font-size:11px;font-weight:900;letter-spacing:2.7px}
+.school-page-intro h1{margin:12px 0 0;color:#07376f;font-size:54px;line-height:1.02;letter-spacing:-2.6px;font-weight:900}
+.school-page-intro__text p{margin:0 0 18px;color:#647581;font-size:16px;line-height:1.75}
+
+.school-page-values{padding:82px 0;background:#f7faf8}
+.school-page-section-head{max-width:760px;margin-bottom:34px}
+.school-page-section-head h2{margin:11px 0 0;color:#07376f;font-size:44px;line-height:1.05;letter-spacing:-2px}
+.school-page-values__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.school-page-values__grid article{padding:28px 24px;border-radius:18px;background:#fff;border:1px solid #e2eae5}
+.school-page-values__grid article>div{width:48px;height:48px;display:grid;place-items:center;margin-bottom:20px;border-radius:14px;background:#e9f9ee;color:#18c447}
+.school-page-values__grid svg{width:23px;height:23px}
+.school-page-values__grid h3{margin:0 0 8px;color:#07376f;font-size:18px}
+.school-page-values__grid p{margin:0;color:#6d7d88;font-size:13px;line-height:1.6}
+
+.school-page-journey{padding:82px 0;background:#062f6c}
+.school-page-journey__box{display:flex;align-items:center;justify-content:space-between;gap:40px;color:#fff}
+.school-page-journey__box h2{margin:10px 0 12px;font-size:44px;line-height:1.05}
+.school-page-journey__box p{max-width:720px;margin:0;color:rgba(255,255,255,.72);font-size:15px;line-height:1.7}
+.school-page-journey__box>a{flex:0 0 auto;min-height:54px;display:inline-flex;align-items:center;gap:14px;padding:0 23px;border-radius:9px;background:#18c447;color:#fff;text-decoration:none;font-weight:800;box-shadow:0 5px 0 #0b922e}
+
+.school-page-cta{padding:72px 0 90px;background:#fff}
+.school-page-cta__box{display:flex;align-items:center;justify-content:space-between;gap:40px;padding:46px 52px;border-radius:24px;background:#f3f7f4;border:1px solid #e0e9e3}
+.school-page-cta__box>div>span{color:#18bd45;font-size:10px;font-weight:900;letter-spacing:2px}
+.school-page-cta__box h2{margin:9px 0 7px;color:#07376f;font-size:36px}
+.school-page-cta__box p{margin:0;color:#6d7d88;font-size:14px}
+.school-page-cta__box>a{flex:0 0 auto;min-height:54px;display:inline-flex;align-items:center;gap:14px;padding:0 23px;border-radius:9px;background:#18c447;color:#fff;text-decoration:none;font-weight:800;box-shadow:0 5px 0 #0b922e}
+
+@media(max-width:900px){
+  .school-page-intro__grid{grid-template-columns:1fr;gap:30px}
+  .school-page-values__grid{grid-template-columns:1fr 1fr}
+  .school-page-journey__box,.school-page-cta__box{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:600px){
+  .school-page-photo{padding:32px 0 20px}
+  .school-page-photo__frame{border-radius:16px}
+  .school-page-intro{padding:42px 0 54px}
+  .school-page-intro h1{font-size:38px;letter-spacing:-1.7px}
+  .school-page-intro__text p{font-size:14px}
+  .school-page-values{padding:56px 0}
+  .school-page-values__grid{grid-template-columns:1fr}
+  .school-page-section-head h2,.school-page-journey__box h2{font-size:34px}
+  .school-page-journey{padding:56px 0}
+  .school-page-journey__box>a,.school-page-cta__box>a{width:100%;justify-content:center}
+  .school-page-cta{padding:52px 0 68px}
+  .school-page-cta__box{padding:32px 24px}
+}
