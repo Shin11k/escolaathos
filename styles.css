@@ -7021,3 +7021,153 @@ a{text-decoration:none;color:inherit}
   .athos-family__history-heading h2{font-size:32px}
   .athos-family__history-body{gap:26px}
 }
+
+
+/* A Escola — visual escolar e natural v3 */
+.school-story{padding:88px 0 76px;background:#fbfcf8}
+.school-story__title{max-width:860px;margin-bottom:46px}
+.school-story__title h2,
+.school-founders h2,
+.school-direction h2,
+.school-principles h2,
+.school-history-text h2{
+  margin:10px 0 16px;
+  color:#07376f;
+  font-family:"Roboto Slab",serif;
+  font-size:clamp(34px,4vw,52px);
+  line-height:1.08;
+  letter-spacing:-1.4px;
+}
+.school-story__title>p{max-width:700px;margin:0;color:#687985;font-size:16px;line-height:1.75}
+
+.school-story__opening{
+  display:grid;
+  grid-template-columns:1.12fr .88fr;
+  gap:0;
+  border:1px solid #e0e7dd;
+  background:#fff;
+}
+.school-story__old-photo{margin:0;position:relative;min-height:420px;background:#e9ece6}
+.school-story__old-photo img{width:100%;height:100%;min-height:420px;object-fit:cover;display:block}
+.school-story__old-photo figcaption{
+  position:absolute;left:0;bottom:0;
+  padding:10px 14px;background:rgba(255,255,255,.92);
+  color:#5d6c75;font-size:12px;font-weight:700
+}
+.school-story__opening-copy{
+  display:flex;flex-direction:column;justify-content:center;
+  padding:46px 48px;
+  border-left:7px solid #f2c94c
+}
+.school-story__date{color:#159447;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.school-story__opening-copy h3{margin:10px 0 14px;color:#07376f;font-size:30px}
+.school-story__opening-copy p{margin:0;color:#667985;line-height:1.75}
+.school-story__verse{
+  margin-top:26px!important;
+  padding:18px 0 0;
+  border-top:1px solid #e4e9e2;
+  color:#07376f!important;
+  font-family:"Roboto Slab",serif;
+  font-size:17px
+}
+
+.school-story__timeline{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  margin-top:34px;
+  border-top:3px solid #173f73
+}
+.school-story__timeline>div{position:relative;padding:24px 24px 6px 0}
+.school-story__timeline>div:before{
+  content:"";position:absolute;top:-8px;left:0;width:13px;height:13px;
+  border-radius:50%;background:#f2c94c;border:2px solid #173f73
+}
+.school-story__timeline span{display:block;color:#159447;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.school-story__timeline strong{display:block;margin:7px 0 8px;color:#07376f;font-size:18px}
+.school-story__timeline p{margin:0;color:#71808a;font-size:13px;line-height:1.55}
+
+.school-founders{padding:86px 0;background:#fff}
+.school-founders__main{display:grid;grid-template-columns:.9fr 1.1fr;gap:62px;align-items:center}
+.school-founders__photo{margin:0}
+.school-founders__photo img{
+  width:100%;height:500px;object-fit:cover;display:block;
+  border:10px solid #f5f2e8;
+  outline:1px solid #ddd8ca
+}
+.school-founders__photo figcaption{margin-top:10px;color:#7a858b;font-size:12px;text-align:center}
+.school-founders__copy>p{max-width:620px;color:#637783;line-height:1.75}
+.school-founders__people{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0 0}
+.school-founders__people p{margin:0;padding-top:16px;border-top:2px solid #e7ece6}
+.school-founders__people strong,.school-founders__people span{display:block}
+.school-founders__people strong{color:#07376f;font-size:15px}
+.school-founders__people span{margin-top:5px;color:#159447;font-size:12px;font-weight:800}
+.school-founders blockquote{
+  margin:30px 0 0;padding:16px 0 0;border:0;border-top:1px solid #e3e8df;
+  background:transparent;color:#6c5b22;font-family:"Roboto Slab",serif;font-size:21px
+}
+
+.school-history-text{margin-top:78px;padding-top:62px;border-top:1px solid #dfe6dc}
+.school-history-text__heading{max-width:760px;margin-bottom:30px}
+.school-history-text__content{max-width:900px}
+.school-history-text__content p{margin:0 0 20px;color:#566b78;font-size:15px;line-height:1.84}
+.school-history-text__content strong{color:#07376f}
+.school-history-text__closing{
+  margin-top:34px;padding:26px 30px;
+  border-left:6px solid #f2c94c;background:#faf7ea
+}
+.school-history-text__closing span{display:block;color:#159447;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.school-history-text__closing strong{display:block;margin:7px 0 8px;color:#07376f;font-family:"Roboto Slab",serif;font-size:22px}
+.school-history-text__closing p{margin:0;color:#6c7478;line-height:1.65}
+
+.school-direction{padding:82px 0;background:#f3f7ef}
+.school-direction__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.school-direction__copy>p{max-width:620px;color:#637783;line-height:1.75}
+.school-direction__names{display:flex;gap:34px;flex-wrap:wrap;margin-top:28px}
+.school-direction__names p{margin:0;padding-top:15px;border-top:2px solid #bfd6c1;min-width:220px}
+.school-direction__names strong,.school-direction__names span{display:block}
+.school-direction__names strong{color:#07376f;font-size:15px}
+.school-direction__names span{margin-top:5px;color:#159447;font-size:12px;font-weight:800}
+.school-direction__photo-placeholder{
+  min-height:330px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+  padding:28px;border:8px solid #fff;outline:1px solid #d7ded3;background:#e7eee2;color:#738177
+}
+.school-direction__photo-placeholder svg{width:42px;height:42px;margin-bottom:12px;color:#159447}
+.school-direction__photo-placeholder strong{color:#07376f}
+.school-direction__photo-placeholder span{margin-top:6px;font-size:13px}
+
+.school-principles{padding:84px 0;background:#fff}
+.school-principles__head{max-width:760px;margin-bottom:36px}
+.school-principles__list{border-top:1px solid #dde5dc}
+.school-principles__list article{
+  display:grid;grid-template-columns:70px 1fr;gap:26px;
+  padding:28px 0;border-bottom:1px solid #dde5dc
+}
+.school-principles__number{
+  width:50px;height:50px;display:grid;place-items:center;
+  border:2px solid #f2c94c;border-radius:50%;
+  color:#07376f;font-weight:900
+}
+.school-principles__list article>div:last-child>span{color:#159447;font-size:10px;font-weight:900;letter-spacing:.11em}
+.school-principles__list h3{margin:5px 0 8px;color:#07376f;font-size:22px}
+.school-principles__list p{margin:0;max-width:860px;color:#657783;line-height:1.7}
+
+@media(max-width:900px){
+  .school-story__opening,.school-founders__main,.school-direction__grid{grid-template-columns:1fr}
+  .school-story__opening-copy{border-left:0;border-top:7px solid #f2c94c}
+  .school-story__timeline{grid-template-columns:1fr 1fr;gap:20px}
+  .school-founders__main,.school-direction__grid{gap:36px}
+}
+@media(max-width:620px){
+  .school-story,.school-founders,.school-direction,.school-principles{padding:60px 0}
+  .school-story__title h2,.school-founders h2,.school-direction h2,.school-principles h2,.school-history-text h2{font-size:34px}
+  .school-story__old-photo,.school-story__old-photo img{min-height:300px}
+  .school-story__opening-copy{padding:28px 22px}
+  .school-story__timeline{grid-template-columns:1fr}
+  .school-story__timeline>div{padding-bottom:10px}
+  .school-founders__photo img{height:390px;border-width:6px}
+  .school-founders__people{grid-template-columns:1fr}
+  .school-history-text{margin-top:56px;padding-top:46px}
+  .school-history-text__closing{padding:22px 20px}
+  .school-principles__list article{grid-template-columns:52px 1fr;gap:16px}
+  .school-principles__number{width:42px;height:42px}
+}
