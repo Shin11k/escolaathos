@@ -7057,9 +7057,9 @@ a{text-decoration:none;color:inherit}
 .school-story__opening-copy{
   display:flex;flex-direction:column;justify-content:center;
   padding:46px 48px;
-  border-left:7px solid #f2c94c
+  border-left:7px solid #18c447
 }
-.school-story__date{color:#159447;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.school-story__date{color:#18b943;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
 .school-story__opening-copy h3{margin:10px 0 14px;color:#07376f;font-size:30px}
 .school-story__opening-copy p{margin:0;color:#667985;line-height:1.75}
 .school-story__verse{
@@ -7080,9 +7080,9 @@ a{text-decoration:none;color:inherit}
 .school-story__timeline>div{position:relative;padding:24px 24px 6px 0}
 .school-story__timeline>div:before{
   content:"";position:absolute;top:-8px;left:0;width:13px;height:13px;
-  border-radius:50%;background:#f2c94c;border:2px solid #173f73
+  border-radius:50%;background:#18c447;border:2px solid #173f73
 }
-.school-story__timeline span{display:block;color:#159447;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.school-story__timeline span{display:block;color:#18b943;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
 .school-story__timeline strong{display:block;margin:7px 0 8px;color:#07376f;font-size:18px}
 .school-story__timeline p{margin:0;color:#71808a;font-size:13px;line-height:1.55}
 
@@ -7091,8 +7091,8 @@ a{text-decoration:none;color:inherit}
 .school-founders__photo{margin:0}
 .school-founders__photo img{
   width:100%;height:500px;object-fit:cover;display:block;
-  border:10px solid #f5f2e8;
-  outline:1px solid #ddd8ca
+  border:10px solid #edf7f0;
+  outline:1px solid #cfe4d5
 }
 .school-founders__photo figcaption{margin-top:10px;color:#7a858b;font-size:12px;text-align:center}
 .school-founders__copy>p{max-width:620px;color:#637783;line-height:1.75}
@@ -7100,10 +7100,10 @@ a{text-decoration:none;color:inherit}
 .school-founders__people p{margin:0;padding-top:16px;border-top:2px solid #e7ece6}
 .school-founders__people strong,.school-founders__people span{display:block}
 .school-founders__people strong{color:#07376f;font-size:15px}
-.school-founders__people span{margin-top:5px;color:#159447;font-size:12px;font-weight:800}
+.school-founders__people span{margin-top:5px;color:#18b943;font-size:12px;font-weight:800}
 .school-founders blockquote{
   margin:30px 0 0;padding:16px 0 0;border:0;border-top:1px solid #e3e8df;
-  background:transparent;color:#6c5b22;font-family:"Roboto Slab",serif;font-size:21px
+  background:transparent;color:#0b5f3b;font-family:"Roboto Slab",serif;font-size:21px
 }
 
 .school-history-text{margin-top:78px;padding-top:62px;border-top:1px solid #dfe6dc}
@@ -7113,9 +7113,9 @@ a{text-decoration:none;color:inherit}
 .school-history-text__content strong{color:#07376f}
 .school-history-text__closing{
   margin-top:34px;padding:26px 30px;
-  border-left:6px solid #f2c94c;background:#faf7ea
+  border-left:6px solid #18c447;background:#eef8f1
 }
-.school-history-text__closing span{display:block;color:#159447;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.school-history-text__closing span{display:block;color:#18b943;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
 .school-history-text__closing strong{display:block;margin:7px 0 8px;color:#07376f;font-family:"Roboto Slab",serif;font-size:22px}
 .school-history-text__closing p{margin:0;color:#6c7478;line-height:1.65}
 
@@ -7126,12 +7126,12 @@ a{text-decoration:none;color:inherit}
 .school-direction__names p{margin:0;padding-top:15px;border-top:2px solid #bfd6c1;min-width:220px}
 .school-direction__names strong,.school-direction__names span{display:block}
 .school-direction__names strong{color:#07376f;font-size:15px}
-.school-direction__names span{margin-top:5px;color:#159447;font-size:12px;font-weight:800}
+.school-direction__names span{margin-top:5px;color:#18b943;font-size:12px;font-weight:800}
 .school-direction__photo-placeholder{
   min-height:330px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
   padding:28px;border:8px solid #fff;outline:1px solid #d7ded3;background:#e7eee2;color:#738177
 }
-.school-direction__photo-placeholder svg{width:42px;height:42px;margin-bottom:12px;color:#159447}
+.school-direction__photo-placeholder svg{width:42px;height:42px;margin-bottom:12px;color:#18b943}
 .school-direction__photo-placeholder strong{color:#07376f}
 .school-direction__photo-placeholder span{margin-top:6px;font-size:13px}
 
@@ -7144,16 +7144,16 @@ a{text-decoration:none;color:inherit}
 }
 .school-principles__number{
   width:50px;height:50px;display:grid;place-items:center;
-  border:2px solid #f2c94c;border-radius:50%;
+  border:2px solid #18c447;border-radius:50%;
   color:#07376f;font-weight:900
 }
-.school-principles__list article>div:last-child>span{color:#159447;font-size:10px;font-weight:900;letter-spacing:.11em}
+.school-principles__list article>div:last-child>span{color:#18b943;font-size:10px;font-weight:900;letter-spacing:.11em}
 .school-principles__list h3{margin:5px 0 8px;color:#07376f;font-size:22px}
 .school-principles__list p{margin:0;max-width:860px;color:#657783;line-height:1.7}
 
 @media(max-width:900px){
   .school-story__opening,.school-founders__main,.school-direction__grid{grid-template-columns:1fr}
-  .school-story__opening-copy{border-left:0;border-top:7px solid #f2c94c}
+  .school-story__opening-copy{border-left:0;border-top:7px solid #18c447}
   .school-story__timeline{grid-template-columns:1fr 1fr;gap:20px}
   .school-founders__main,.school-direction__grid{gap:36px}
 }
