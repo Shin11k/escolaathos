@@ -6899,3 +6899,125 @@ a{text-decoration:none;color:inherit}
   .athos-family__direction{margin-top:62px;padding:30px 22px}
   .athos-family__direction-photo{min-height:250px}
 }
+
+
+/* A Escola detailed history */
+.athos-family__history-full{
+  margin-top:86px;
+  padding:56px;
+  border:1px solid #e0e9ee;
+  border-radius:30px;
+  background:linear-gradient(180deg,#fbfdfd 0%,#f4f8fa 100%);
+}
+.athos-family__history-heading{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(280px,.65fr);
+  gap:48px;
+  align-items:end;
+  padding-bottom:30px;
+  border-bottom:1px solid #dde8ed;
+}
+.athos-family__history-heading .school-page-eyebrow{grid-column:1/-1}
+.athos-family__history-heading h2{
+  margin:0;
+  max-width:720px;
+  color:#07376f;
+  font-family:"Roboto Slab",serif;
+  font-size:clamp(34px,3.5vw,48px);
+  line-height:1.06;
+  letter-spacing:-1.5px;
+}
+.athos-family__history-heading>p{
+  margin:0 0 3px;
+  color:#687b88;
+  font-size:15px;
+  line-height:1.7;
+}
+.athos-family__history-body{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);
+  gap:52px;
+  align-items:start;
+  margin-top:34px;
+}
+.athos-family__history-copy{
+  column-count:2;
+  column-gap:34px;
+}
+.athos-family__history-copy p{
+  break-inside:avoid;
+  margin:0 0 22px;
+  color:#526876;
+  font-size:14px;
+  line-height:1.82;
+}
+.athos-family__history-copy strong{color:#07376f}
+.athos-family__history-highlight{
+  position:sticky;
+  top:118px;
+  padding:30px;
+  border-radius:22px;
+  background:#07376f;
+  color:#fff;
+  box-shadow:0 20px 48px rgba(7,55,111,.14);
+}
+.athos-family__history-icon{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  margin-bottom:22px;
+  border-radius:14px;
+  background:rgba(117,228,145,.13);
+  color:#75e491;
+}
+.athos-family__history-highlight>span{
+  color:#75e491;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.13em;
+}
+.athos-family__history-highlight h3{
+  margin:10px 0 14px;
+  color:#fff;
+  font-family:"Roboto Slab",serif;
+  font-size:26px;
+  line-height:1.18;
+}
+.athos-family__history-highlight p{
+  margin:0;
+  color:rgba(255,255,255,.76);
+  font-size:14px;
+  line-height:1.7;
+}
+.athos-family__history-highlight blockquote{
+  margin:24px 0 0;
+  padding:17px 0 0;
+  border:0;
+  border-top:1px solid rgba(255,255,255,.14);
+  border-radius:0;
+  background:transparent;
+  color:#ffd560;
+  font-family:"Roboto Slab",serif;
+  font-size:17px;
+  line-height:1.45;
+}
+
+@media(max-width:960px){
+  .athos-family__history-heading,
+  .athos-family__history-body{
+    grid-template-columns:1fr;
+  }
+  .athos-family__history-heading{gap:14px}
+  .athos-family__history-copy{column-count:1}
+  .athos-family__history-highlight{position:static}
+}
+@media(max-width:620px){
+  .athos-family__history-full{
+    margin-top:58px;
+    padding:28px 20px;
+    border-radius:22px;
+  }
+  .athos-family__history-heading h2{font-size:32px}
+  .athos-family__history-body{gap:26px}
+}
