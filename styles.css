@@ -7088,9 +7088,9 @@ a{text-decoration:none;color:inherit}
 
 .school-founders{padding:86px 0;background:#fff}
 .school-founders__main{display:grid;grid-template-columns:.9fr 1.1fr;gap:62px;align-items:center}
-.school-founders__photo{margin:0}
+.school-founders__photo{margin:0;min-width:0}
 .school-founders__photo img{
-  width:100%;height:500px;object-fit:cover;display:block;
+  width:100%;height:auto;max-height:none;object-fit:contain;object-position:center;display:block;
   border:10px solid #edf7f0;
   outline:1px solid #cfe4d5
 }
@@ -7164,7 +7164,7 @@ a{text-decoration:none;color:inherit}
   .school-story__opening-copy{padding:28px 22px}
   .school-story__timeline{grid-template-columns:1fr}
   .school-story__timeline>div{padding-bottom:10px}
-  .school-founders__photo img{height:390px;border-width:6px}
+  .school-founders__photo img{height:auto;max-height:none;border-width:6px}
   .school-founders__people{grid-template-columns:1fr}
   .school-history-text{margin-top:56px;padding-top:46px}
   .school-history-text__closing{padding:22px 20px}
@@ -7173,29 +7173,33 @@ a{text-decoration:none;color:inherit}
 }
 
 
-/* Registros históricos na linha do tempo — Escola Athos */
+/* Fotografias históricas completas: respeitar a proporção original de cada registro */
 .school-story__timeline > .school-story__timeline-gallery {
   grid-column:1 / -1;
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:22px;
-  padding:14px 0 6px;
+  grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);
+  gap:20px;
+  align-items:start;
+  width:100%;
+  padding:18px 0 6px;
 }
 .school-story__timeline > .school-story__timeline-gallery::before{display:none}
 .school-story__timeline-gallery figure{
   margin:0;
+  min-width:0;
   overflow:hidden;
+  border:1px solid #dae5e5;
+  border-radius:12px;
   background:#fff;
-  border:1px solid #e2e9e5;
+  box-shadow:0 8px 24px rgba(7,55,111,.06);
 }
 .school-story__timeline-gallery img{
   display:block;
   width:100%;
-  height:300px;
-  object-fit:cover;
-  object-position:center center;
+  height:auto;
+  object-fit:contain;
+  object-position:center;
 }
-.school-story__timeline-gallery figure:nth-child(2) img{object-position:center 30%}
 .school-story__timeline-gallery figcaption{
   padding:13px 16px 15px;
   color:#315471;
@@ -7204,10 +7208,10 @@ a{text-decoration:none;color:inherit}
 }
 @media(max-width:700px){
   .school-story__timeline > .school-story__timeline-gallery{
-    grid-template-columns:1fr;
+    grid-template-columns:minmax(0,1fr);
     gap:16px;
     padding-top:8px;
   }
-  .school-story__timeline-gallery img{height:270px}
-  .school-story__timeline-gallery figure:nth-child(2) img{height:340px;object-position:center 25%}
+  .school-story__timeline-gallery figure{max-width:100%}
+  .school-story__timeline-gallery figure:nth-child(2){width:min(100%,450px);justify-self:center}
 }
