@@ -7171,3 +7171,43 @@ a{text-decoration:none;color:inherit}
   .school-principles__list article{grid-template-columns:52px 1fr;gap:16px}
   .school-principles__number{width:42px;height:42px}
 }
+
+
+/* Registros históricos na linha do tempo — Escola Athos */
+.school-story__timeline > .school-story__timeline-gallery {
+  grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  padding:14px 0 6px;
+}
+.school-story__timeline > .school-story__timeline-gallery::before{display:none}
+.school-story__timeline-gallery figure{
+  margin:0;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid #e2e9e5;
+}
+.school-story__timeline-gallery img{
+  display:block;
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  object-position:center center;
+}
+.school-story__timeline-gallery figure:nth-child(2) img{object-position:center 30%}
+.school-story__timeline-gallery figcaption{
+  padding:13px 16px 15px;
+  color:#315471;
+  font-size:13px;
+  font-weight:700;
+}
+@media(max-width:700px){
+  .school-story__timeline > .school-story__timeline-gallery{
+    grid-template-columns:1fr;
+    gap:16px;
+    padding-top:8px;
+  }
+  .school-story__timeline-gallery img{height:270px}
+  .school-story__timeline-gallery figure:nth-child(2) img{height:340px;object-position:center 25%}
+}
