@@ -6304,15 +6304,30 @@ a{text-decoration:none;color:inherit}
 }
 
 
-/* Ajuste final da fachada: imagem limpa e maior */
+/* Fachada na Home: exibir a fotografia completa, sem cortar a placa ou a entrada */
 .school-intro__visual-card{display:none!important}
+.school-intro__visual{
+  height:auto;
+  min-height:0;
+  aspect-ratio:auto;
+}
+.school-intro__visual img{
+  width:100%;
+  height:auto;
+  min-height:0;
+  object-fit:contain;
+  object-position:center;
+}
+@media(min-width:901px){
+  .school-intro__grid{grid-template-columns:1fr 1.08fr;gap:48px}
+}
 @media(max-width:900px){
-  .school-intro__visual{min-height:0;aspect-ratio:4/3}
-  .school-intro__visual img{min-height:0}
+  .school-intro__visual{min-height:0;aspect-ratio:auto}
+  .school-intro__visual img{min-height:0;height:auto}
 }
 @media(max-width:600px){
-  .school-intro__visual{min-height:0;aspect-ratio:4/3;border-radius:16px}
-  .school-intro__visual img{min-height:0}
+  .school-intro__visual{min-height:0;aspect-ratio:auto;border-radius:16px}
+  .school-intro__visual img{min-height:0;height:auto}
 }
 
 
